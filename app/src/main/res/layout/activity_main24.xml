@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.tanloc2017.appmau.Main2Activity4">
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/next"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        fancy:fb_focusColor="#c76161"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text=""
+        fancy:fb_defaultColor="#d97077"
+        fancy:fb_iconResource="@drawable/next"
+        fancy:fb_radius="1000000dp"></mehdi.sakout.fancybuttons.FancyButton>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        fancy:fb_focusColor="#c76161"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignTop="@+id/next"
+        android:text=""
+        fancy:fb_defaultColor="#d97077"
+        fancy:fb_iconResource="@drawable/back"
+        fancy:fb_radius="1000000dp"></mehdi.sakout.fancybuttons.FancyButton>
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageView"
+        android:layout_width="340dp"
+        android:layout_height="303dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:background="#d97077"
+
+        app:riv_corner_radius="30dp"
+        app:riv_corner_radius_bottom_left="7dp"
+        app:riv_corner_radius_bottom_right="7dp"
+        app:riv_corner_radius_top_left="7dp"
+        app:riv_corner_radius_top_right="7dp"
+        app:riv_mutate_background="true"
+        android:scaleType="fitCenter"
+        app:riv_oval="false" />
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/bt4"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        fancy:fb_radius="4dp"
+		android:text="25"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        fancy:fb_focusColor="#c76161"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignTop="@+id/bt3"
+        fancy:fb_defaultColor="#d97077"></mehdi.sakout.fancybuttons.FancyButton>
+    <TextView
+        android:id="@+id/txttt"
+        android:layout_width="193dp"
+        android:layout_height="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="169dp"
+        android:layout_marginStart="17dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="-10dp"
+        android:text="Your answer is ?"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/bt1"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignTop="@+id/bt2"
+        android:text="5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        fancy:fb_focusColor="#c76161"
+        fancy:fb_radius="4dp"
+        fancy:fb_defaultColor="#d97077"></mehdi.sakout.fancybuttons.FancyButton>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/bt2"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginBottom="119dp"
+        fancy:fb_defaultColor="#d97077"
+        fancy:fb_focusColor="#c76161"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        fancy:fb_radius="4dp"
+        fancy:fb_text="2"
+        fancy:fb_textSize="13sp"></mehdi.sakout.fancybuttons.FancyButton>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/bt3"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginBottom="50dp"
+        android:textAlignment="center"
+        android:text="nothing"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        fancy:fb_defaultColor="#d97077"
+        fancy:fb_focusColor="#c76161"
+        fancy:fb_radius="4dp">
+    </mehdi.sakout.fancybuttons.FancyButton>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/late4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/next"
+        android:layout_centerHorizontal="true"
+        android:text="What did you see "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="7dp" />
+    <TextView
+        android:id="@+id/txtdiem"
+        android:layout_width="101dp"
+        android:layout_height="27dp"
+
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignTop="@+id/txttt"
+        android:text="Your point: "
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</RelativeLayout>

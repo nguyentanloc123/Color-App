@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="CustomColorPicker" parent="ColorPicker">
+        <item name="cp_backgroundColor">@color/colorPrimaryDark</item>
+        <item name="cp_hexaDecimalTextColor">#ffffff</item>
+        <item name="cp_colorComponentsTextColor">#fff</item>
+        <item name="cp_positiveActionTextColor">#ff0000</item>
+        <item name="cp_negativeActionTextColor">#1a00af</item>
+        <item name="cp_sliderThumbColor">#3e34f9</item>
+    </style>
+
+
+
+</resources>

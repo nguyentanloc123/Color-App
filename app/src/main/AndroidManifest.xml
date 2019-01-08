@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tanloc2017.appmau">
+    <supports-screens
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true">
+    </supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider{373183393242293}"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+
+        <activity android:name=".Splascreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Main2Activity1" />
+        <activity android:name=".Main2Activity2" />
+        <activity android:name=".Main2Activity3" />
+        <activity android:name=".Main2Activity4" />
+        <activity android:name=".Main2Activity5" />
+        <activity android:name=".Main2Activity6" />
+        <activity android:name=".Main2Activity7" />
+        <activity android:name=".Main2Activity8" />
+        <activity android:name=".Main2Activity9" />
+        <activity android:name=".Main2Activity10" />
+        <activity android:name=".Main2Activity11" />
+        <activity android:name=".Main2Activity12" />
+        <activity android:name=".Main2Activity13" />
+        <activity android:name=".Main2Activity14" />
+        <activity android:name=".Main2Activity15" />
+        <activity android:name=".Main2Activity16" />
+        <activity android:name=".Main2Activity17" />
+        <activity android:name=".Main2Activity18" />
+        <activity android:name=".Main2Activity19" />
+        <activity android:name=".Main2Activity20" />
+        <activity android:name=".Main2Activity21" />
+        <activity android:name=".Main2Activity22" />
+        <activity android:name=".Main2Activity23" />
+        <activity
+            android:name=".Maintimmau"
+            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name=".MainEXtract" />
+        <activity android:name=".Mainphamau" />
+        <activity android:name=".MainDanhgia" />
+        <activity android:name=".Mmixlayout" />
+        <activity android:name=".gametimanh" />
+        <activity android:name=".Maininfo" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".slide_screen" />
+        <activity android:name=".slide_screen2" />
+        <activity android:name=".slide_screen4" />
+        <activity android:name=".slide_screen3" />
+        <activity android:name=".Main_result" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <!-- <activity android:name=".Mainloaing"></activity> -->
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".Main4Activity"></activity>
+    </application>
+</manifest>

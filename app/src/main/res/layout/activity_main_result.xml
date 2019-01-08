@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:fancy="http://schemas.android.com/apk/res-auto"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+   android:background="@drawable/bgresult"
+    android:layout_height="match_parent"
+    tools:context=".Main_result">
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/imageView"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@+id/txthoanthanh"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text=""
+            fancy:fb_defaultColor="#00d97077"
+            fancy:fb_focusColor="#afafaf"
+            fancy:fb_iconResource="@drawable/music"
+            fancy:fb_radius="1000000dp"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintTop_toTopOf="parent"></mehdi.sakout.fancybuttons.FancyButton>
+
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView"
+            android:layout_width="332dp"
+            android:layout_height="394dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="84dp"
+            android:background="#fff"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.409"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="30dp"
+            app:riv_corner_radius_bottom_left="7dp"
+            app:riv_corner_radius_bottom_right="7dp"
+            app:riv_corner_radius_top_left="7dp"
+            app:riv_corner_radius_top_right="7dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView1"
+            android:layout_width="332dp"
+            android:layout_height="2dp"
+
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="188dp"
+            android:background="#707070"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:riv_corner_radius="30dp"
+            app:riv_corner_radius_bottom_left="7dp"
+            app:riv_corner_radius_bottom_right="7dp"
+            app:riv_corner_radius_top_left="7dp"
+            app:riv_corner_radius_top_right="7dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView2"
+            android:layout_width="2dp"
+            android:layout_height="114dp"
+
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="76dp"
+            android:background="#707070"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:riv_corner_radius="30dp"
+            app:riv_corner_radius_bottom_left="7dp"
+            app:riv_corner_radius_bottom_right="7dp"
+            app:riv_corner_radius_top_left="7dp"
+            app:riv_corner_radius_top_right="7dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView3"
+            android:layout_width="133dp"
+            android:layout_height="133dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="64dp"
+            android:layout_marginEnd="60dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/succeicon"
+            app:layout_constraintBottom_toTopOf="@+id/txthoanthanh"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:riv_corner_radius="30dp"
+            app:riv_corner_radius_bottom_left="7dp"
+            app:riv_corner_radius_bottom_right="7dp"
+            app:riv_corner_radius_top_left="7dp"
+            app:riv_corner_radius_top_right="7dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="52dp"
+            android:layout_toStartOf="@+id/textView11"
+            android:fontFamily="@font/amarante"
+            android:text="Quiz Result"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            fancy:layout_constraintEnd_toStartOf="@+id/imageView3"
+            fancy:layout_constraintHorizontal_bias="0.0"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toBottomOf="@+id/back" />
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="84dp"
+            android:layout_marginEnd="76dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="2dp"
+            android:text="Your Point"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintEnd_toStartOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="84dp"
+            android:layout_marginEnd="64dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="2dp"
+            android:text="Your Score"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/txtdiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/imageView1"
+
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="76dp"
+            android:text="50"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            fancy:layout_constraintBottom_toTopOf="@+id/textView10"
+            fancy:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txthoanthanh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/imageView1"
+
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="124dp"
+            android:text="100%"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            fancy:layout_constraintBottom_toTopOf="@+id/textView11"
+            fancy:layout_constraintStart_toEndOf="@+id/txtdiem" />
+
+        <TextView
+
+            android:id="@+id/txttieude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="244dp"
+            android:fontFamily="@font/amarante"
+            android:text="2296"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+    <!--<Button-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="66dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="106dp"-->
+        <!--android:background="@drawable/resulttxt" />-->
+
+    <!--<io.netopen.hotbitmapgg.library.view.RingProgressBar-->
+        <!--android:id="@+id/ccpb"-->
+        <!--ringProgressColor="#ff0000"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="167dp"-->
+        <!--app:max="100"-->
+        <!--app:ringColor="#fff"-->
+        <!--app:ringWidth="7dp"-->
+        <!--app:style="STROKE"-->
+        <!--app:textSize="16sp" />-->
+
+
+
+
+
+
+
+</RelativeLayout>

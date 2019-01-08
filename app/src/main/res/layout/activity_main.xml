@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgmenu"
+    android:layout_height="match_parent"
+
+    tools:context="com.tanloc2017.appmau.MainActivity">
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="380dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@drawable/custom_bt"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/btn2"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="380dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:background="@drawable/button3"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/button4"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="190dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@drawable/custom2"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/btn1"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="190dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:background="@drawable/custom_button_cuoi"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="346dp"-->
+    <!--android:layout_height="128dp"-->
+    <!--android:layout_marginStart="4dp"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent">-->
+    <!---->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fab"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_marginEnd="19dp"-->
+    <!--android:backgroundTint="#d339e7"-->
+    <!--android:src="@drawable/settingicon"-->
+    <!--tools:layout_editor_absoluteX="328dp"-->
+    <!--tools:layout_editor_absoluteY="16dp" />-->
+    <!---->
+
+    <!--<include-->
+    <!--layout="@layout/fab_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--tools:ignore="MissingConstraints"-->
+    <!--tools:layout_editor_absoluteX="0dp"-->
+    <!--tools:layout_editor_absoluteY="0dp" />-->
+    <!---->
+    <!---->
+    <!---->
+    <!--</RelativeLayout>-->
+
+    <!--<android.support.constraint.Guideline-->
+    <!--android:id="@+id/guideline3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--app:layout_constraintGuide_begin="170dp" />-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="245dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom2"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintHorizontal_bias="0.503"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="245dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_bt"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintHorizontal_bias="0.503"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toBottomOf="@+id/bt1" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="245dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_button_cuoi"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintHorizontal_bias="0.503"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toBottomOf="@+id/bt4" />
+
+        <Button
+            android:id="@+id/bt4"
+            android:layout_width="245dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_color"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintHorizontal_bias="0.503"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toBottomOf="@+id/bt2" />
+
+        <Button
+            android:id="@+id/im1"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/text"
+            fancy:layout_constraintBottom_toTopOf="@+id/bt1"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="26dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/star"
+            fancy:layout_constraintBottom_toBottomOf="@+id/button4"
+            fancy:layout_constraintEnd_toStartOf="@+id/button4"
+            fancy:layout_constraintTop_toTopOf="parent"
+            fancy:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="26dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/star"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="26dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/star"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintEnd_toStartOf="@+id/button11"
+            fancy:layout_constraintHorizontal_bias="0.0"
+            fancy:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/star"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintHorizontal_bias="0.32"
+            fancy:layout_constraintStart_toEndOf="@+id/button12" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="26dp"
+            android:layout_height="20dp"
+            android:background="@drawable/star"
+            fancy:layout_constraintStart_toStartOf="@+id/btn_setting"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="26dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/star"
+            fancy:layout_constraintBottom_toTopOf="@+id/button10"
+            fancy:layout_constraintEnd_toStartOf="@+id/button4"
+            fancy:layout_constraintHorizontal_bias="0.258"
+            fancy:layout_constraintStart_toEndOf="@+id/button7"
+            fancy:layout_constraintTop_toTopOf="parent"
+            fancy:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="26dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="52dp"
+            android:background="@drawable/star"
+            fancy:layout_constraintStart_toEndOf="@+id/button8"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="26dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/star"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/floatinfo"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_nguoidung"-->
+        <!--android:layout_width="101dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--android:layout_marginTop="28dp"-->
+        <!--android:background="@drawable/floatnguoidung"-->
+        <!--fancy:layout_constraintEnd_toStartOf="@+id/btn_setting"-->
+        <!--fancy:layout_constraintHorizontal_bias="0.0"-->
+        <!--fancy:layout_constraintStart_toStartOf="parent"-->
+        <!--fancy:layout_constraintTop_toTopOf="parent" />-->
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnexit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/buttonexit"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintTop_toBottomOf="@+id/btn_setting" />
+
+        <Button
+            android:id="@+id/btn_music"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/buttonvoicesearch"
+            android:visibility="visible"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintTop_toBottomOf="@+id/btn_setting" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</RelativeLayout>

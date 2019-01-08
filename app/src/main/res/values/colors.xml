@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#262938</color>
+    <color name="colorPrimaryDark">#4a4a4a</color>
+    <color name="colorAccent">#ff4881</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colortrans">#cccccc</color>
+    <color name="blackcolor">#000000</color>
+    <color name="tran">#00000000</color>
+    <color name="line">#f94040</color>
+    <color name="or">#2ecc71</color>
+</resources>

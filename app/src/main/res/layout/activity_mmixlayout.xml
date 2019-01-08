@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6D65E3"
+    tools:context=".Mmixlayout">
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif"
+        android:text="Back"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imgv"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/btntextmau"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/coral"
+        app:riv_border_color="#ffffff"
+        app:riv_border_width="2dip"
+        app:riv_corner_radius="50dp"
+        app:riv_corner_radius_bottom_left="20dp"
+        app:riv_corner_radius_bottom_right="20dp"
+        app:riv_corner_radius_top_left="20dp"
+        app:riv_corner_radius_top_right="20dp"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="repeat" />
+
+    <!--<EditText-->
+        <!--android:id="@+id/edittextmau"-->
+        <!--android:layout_width="212dp"-->
+        <!--android:layout_height="51dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginStart="12dp"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:background="@drawable/round_btn2"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="@color/black_de" />-->
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/btntextmau"
+        android:layout_width="150dp"
+        android:layout_height="114dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:text="Find"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        app:sub_btn_background="#6D65E3"
+        app:sub_btn_duration="1000"
+        app:sub_btn_line_color="@color/white"
+        app:sub_btn_ripple_color="@color/colorAccent"
+        app:sub_btn_tick_color="#6D65E3" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edittextmau"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/btnSpeak"
+        android:layout_alignParentStart="true"
+        android:hint="Input color"
+        app:met_baseColor="#fff"
+        app:met_clearButton="true"
+        app:met_errorColor="#FFFF0000"
+        app:met_floatingLabel="highlight"
+        app:met_iconLeft="@drawable/qqq"
+        app:met_maxCharacters="8"
+        app:met_minCharacters="0"
+        app:met_primaryColor="#fff"
+        app:met_floatingLabelPadding="5dp"
+        app:met_singleLineEllipsis="true" />
+
+
+    <Button
+        android:id="@+id/btnSpeak"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="71dp"
+        android:background="@drawable/vvv" />
+
+    <!--<Button-->
+        <!--android:id="@+id/btntextmau"-->
+        <!--android:layout_width="49dp"-->
+        <!--android:layout_height="49dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignTop="@+id/edittextmau"-->
+        <!--android:layout_marginEnd="73dp"-->
+        <!--android:background="@drawable/qqq" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imgv"-->
+        <!--android:layout_width="358dp"-->
+        <!--android:layout_height="201dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="159dp"-->
+        <!--tools:padding="15dp" />-->
+
+    <TextView
+        android:id="@+id/txthex"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="78dp"
+        android:layout_marginStart="42dp"
+        android:text="Hex code"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtcolor"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txthex"
+        android:layout_marginEnd="35dp"
+        android:text="Color name"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/voiceInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="-73dp"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

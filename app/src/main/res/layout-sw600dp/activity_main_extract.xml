@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.tanloc2017.appmau.MainEXtract">
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginBottom="-9dp"-->
+        <!--android:layout_marginTop="-9dp">-->
+
+        <!--<com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/img"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="728dp"-->
+
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentTop="true"-->
+
+            <!--android:layout_marginBottom="68dp"-->
+            <!--android:background="#d97077"-->
+            <!--android:scaleType="fitCenter"-->
+
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.0"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:riv_mutate_background="true"-->
+            <!--app:riv_oval="false" />-->
+
+
+        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/btn_2"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="73dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="51dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginBottom="243dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Display"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="12sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:layout_constraintEnd_toEndOf="parent" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/button"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="77dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="51dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="196dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Coppy color"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="12sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:layout_constraintStart_toStartOf="parent" />&ndash;&gt;-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtname"-->
+            <!--android:layout_width="181dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_marginBottom="152dp"-->
+            <!--android:text="TextView"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+        <!--<mehdi.sakout.fancybuttons.FancyButton-->
+            <!--android:id="@+id/btn_2"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+
+            <!--android:layout_alignParentEnd="true"-->
+
+            <!--android:layout_alignTop="@+id/bt_load"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginEnd="16dp"-->
+            <!--android:text=""-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--fancy:fb_defaultColor="#f36f82"-->
+            <!--fancy:fb_focusColor="#c76161"-->
+            <!--fancy:fb_iconResource="@drawable/papers"-->
+            <!--fancy:fb_radius="1000000dp"></mehdi.sakout.fancybuttons.FancyButton>-->
+
+        <!--<mehdi.sakout.fancybuttons.FancyButton-->
+            <!--android:id="@+id/bt_load"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:text=""-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--fancy:fb_defaultColor="#f36f82"-->
+            <!--fancy:fb_focusColor="#c76161"-->
+            <!--fancy:fb_iconResource="@drawable/camera"-->
+            <!--fancy:fb_radius="1000000dp"></mehdi.sakout.fancybuttons.FancyButton>-->
+
+        <!--<mehdi.sakout.fancybuttons.FancyButton-->
+            <!--android:id="@+id/bt_home"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignTop="@+id/btn_2"-->
+            <!--android:layout_marginBottom="9dp"-->
+            <!--android:text=""-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.051"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--fancy:fb_defaultColor="#f36f82"-->
+            <!--fancy:fb_focusColor="#c76161"-->
+            <!--fancy:fb_iconResource="@drawable/home"-->
+            <!--fancy:fb_radius="1000000dp"></mehdi.sakout.fancybuttons.FancyButton>-->
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_marginBottom="68dp"-->
+            <!--android:background="#707070"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignTop="@+id/img"-->
+            <!--android:layout_marginTop="88dp"-->
+            <!--android:background="#707070"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.0"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button"-->
+            <!--android:layout_width="76dp"-->
+            <!--android:layout_height="39dp"-->
+
+
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_marginBottom="812dp"-->
+            <!--android:background="@android:drawable/gallery_thumb"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtrbg"-->
+            <!--android:layout_width="149dp"-->
+            <!--android:layout_height="34dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginBottom="500dp"-->
+            <!--android:layout_marginStart="84dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:text="  r:255     b:155      g:150"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:layout_constraintVertical_bias="0.08" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txthex"-->
+            <!--android:layout_width="77.5dp"-->
+            <!--android:layout_height="30dp"-->
+
+            <!--android:layout_marginEnd="16dp"-->
+            <!--android:layout_marginTop="36dp"-->
+            <!--android:text="     #fffff"-->
+            <!--android:textAlignment="viewStart"-->
+            <!--android:textSize="18sp"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txthsl"-->
+            <!--android:layout_width="159dp"-->
+            <!--android:layout_height="39dp"-->
+
+            <!--android:layout_marginStart="276dp"-->
+            <!--android:layout_marginTop="36dp"-->
+            <!--android:text="h:130*    s=120         v=155"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/cl"-->
+            <!--android:layout_width="69dp"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginTop="4dp"-->
+            <!--android:fontFamily="@font/alike"-->
+            <!--android:text="Color"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="17dp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/rbg"-->
+            <!--app:layout_constraintHorizontal_bias="0.0"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/h"-->
+            <!--android:layout_width="69dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+
+            <!--android:layout_marginStart="35dp"-->
+            <!--android:fontFamily="@font/alike"-->
+            <!--android:text="Hex"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="17dp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintBottom_toBottomOf="@+id/hs"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.841"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/hs"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/hs"-->
+            <!--app:layout_constraintVertical_bias="1.0" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/hs"-->
+            <!--android:layout_width="71dp"-->
+            <!--android:layout_height="26dp"-->
+
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignTop="@+id/cl"-->
+            <!--android:layout_marginStart="176dp"-->
+            <!--android:fontFamily="@font/alike"-->
+            <!--android:text="HSL"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="17dp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintBottom_toBottomOf="@+id/rbg"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/rbg"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/rbg"-->
+            <!--app:layout_constraintVertical_bias="1.0" />-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/rbg"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginStart="112dp"-->
+            <!--android:layout_marginTop="4dp"-->
+            <!--android:fontFamily="@font/alike"-->
+            <!--android:text="RBG"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="17dp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+
+
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="-10dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+
+
+            android:background="#d97077"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.503"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+
+
+
+
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
