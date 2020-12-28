@@ -15,7 +15,7 @@ public class slide_screen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide_screen);
         btn=(Button) findViewById(R.id.button9);
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(slide_screen.this,slide_screen2.class);

@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context="com.tanloc2017.appmau.Main2Activity14">
     <mehdi.sakout.fancybuttons.FancyButton
         android:id="@+id/next"
@@ -31,77 +32,53 @@
         fancy:fb_defaultColor="#d97077"
         fancy:fb_iconResource="@drawable/back"
         fancy:fb_radius="1000000dp"></mehdi.sakout.fancybuttons.FancyButton>
-    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+    <FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
         android:layout_width="340dp"
         android:layout_height="303dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="10dp"
         android:layout_marginTop="60dp"
-        android:background="#d97077"
+        android:background="@drawable/background_image"
+        android:scaleType="fitCenter">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/late14"/>
 
-        app:riv_corner_radius="30dp"
-        app:riv_corner_radius_bottom_left="7dp"
-        app:riv_corner_radius_bottom_right="7dp"
-        app:riv_corner_radius_top_left="7dp"
-        app:riv_corner_radius_top_right="7dp"
-        app:riv_mutate_background="true"
-        android:scaleType="fitCenter"
-        app:riv_oval="false" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_below="@id/ln1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/bt2"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            fancy:fb_defaultColor="#d97077"
+            fancy:fb_focusColor="#c76161"
+            fancy:fb_radius="4dp"
+            fancy:fb_text="5"
+            fancy:fb_textSize="13sp"></mehdi.sakout.fancybuttons.FancyButton>
 
-
-    <mehdi.sakout.fancybuttons.FancyButton
-        android:id="@+id/bt2"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_width="165dp"
-        android:layout_height="45dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_marginBottom="119dp"
-        fancy:fb_defaultColor="#d97077"
-        fancy:fb_focusColor="#c76161"
-        fancy:fb_radius="4dp"
-        fancy:fb_text="5"
-        fancy:fb_textSize="13sp"></mehdi.sakout.fancybuttons.FancyButton>
-
-    <mehdi.sakout.fancybuttons.FancyButton
-        android:id="@+id/bt3"
-        android:layout_width="165dp"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_height="45dp"
-        android:layout_alignEnd="@+id/next"
-        android:layout_alignTop="@+id/bt2"
-        android:text="nothing"
-        fancy:fb_defaultColor="#d97077"
-        fancy:fb_focusColor="#c76161"
-        fancy:fb_radius="4dp"></mehdi.sakout.fancybuttons.FancyButton>
-
-    <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="83dp"
-        android:background="@drawable/late14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/txttt"
-        android:layout_width="193dp"
-        android:layout_height="27dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="169dp"
-        android:layout_marginStart="17dp"
-        android:paddingBottom="10dp"
-        android:paddingTop="-10dp"
-        android:text="Your answer is ?"
-        android:textSize="15sp"
-        android:textStyle="bold" />
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:layout_marginTop="16dp"
+            android:id="@+id/bt3"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_height="45dp"
+            android:text="Nothing"
+            fancy:fb_defaultColor="#d97077"
+            fancy:fb_focusColor="#c76161"
+            fancy:fb_radius="4dp"></mehdi.sakout.fancybuttons.FancyButton>
+    </LinearLayout>
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -113,15 +90,32 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="7dp" />
-    <TextView
-        android:id="@+id/txtdiem"
-        android:layout_width="101dp"
-        android:layout_height="27dp"
-
-        android:layout_alignEnd="@+id/imageView"
-        android:layout_alignTop="@+id/txttt"
-        android:text="Your point: "
-        android:textSize="15sp"
-        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/ln1"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="32dp"
+        android:weightSum="2"
+        android:layout_below="@+id/imageView"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txttt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your answer is ?"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txtdiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your point: "
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </RelativeLayout>

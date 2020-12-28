@@ -1,14 +1,10 @@
 package com.tanloc2017.appmau;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
 
 import com.shashank.sony.fancygifdialoglib.FancyGifDialog;
 import com.shashank.sony.fancygifdialoglib.FancyGifDialogListener;
@@ -17,32 +13,33 @@ import mehdi.sakout.fancybuttons.FancyButton;
 
 public class Main2Activity1 extends AppCompatActivity {
 
-    int diem1=0;
+    int diem1 = 0;
     FancyButton b1;
     FancyButton b2;
     FancyButton next;
     FancyButton back;
     FancyButton b3;
-	FancyButton b4;
+    FancyButton b4;
     Intent intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main21);
-          intent= new Intent(Main2Activity1.this,Main2Activity2.class);
-        b1=(FancyButton) findViewById(R.id.bt1);
-        b2=(FancyButton) findViewById(R.id.bt2);
-        b3=(FancyButton) findViewById(R.id.bt3);
-		b4=(FancyButton)findViewById(R.id.bt4);
-        final Bundle bundle= new Bundle();
+        intent = new Intent(Main2Activity1.this, Main2Activity2.class);
+        b1 = (FancyButton) findViewById(R.id.bt1);
+        b2 = (FancyButton) findViewById(R.id.bt2);
+        b3 = (FancyButton) findViewById(R.id.bt3);
+        b4 = (FancyButton) findViewById(R.id.bt4);
+        final Bundle bundle = new Bundle();
 
-        final MediaPlayer mp= MediaPlayer.create(this,R.raw.stone);
-        final MediaPlayer mp1= MediaPlayer.create(this,R.raw.correct);
-        final MediaPlayer mp2= MediaPlayer.create(this,R.raw.wrong);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.stone);
+        final MediaPlayer mp1 = MediaPlayer.create(this, R.raw.correct);
+        final MediaPlayer mp2 = MediaPlayer.create(this, R.raw.wrong);
         final FancyButton next;
         final FancyButton back;
-        next=(FancyButton)findViewById(R.id.next);
-        back=(FancyButton)findViewById(R.id.back);
+        next = (FancyButton) findViewById(R.id.next);
+        back = (FancyButton) findViewById(R.id.back);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,8 +56,8 @@ public class Main2Activity1 extends AppCompatActivity {
                             @Override
                             public void OnClick() {
                                 finish();
-                                bundle.putInt("diem",diem1);
-                                intent.putExtra("dulieu",bundle);
+                                bundle.putInt("diem", diem1);
+                                intent.putExtra("dulieu", bundle);
                                 startActivity(intent);
                             }
                         })
@@ -72,8 +69,6 @@ public class Main2Activity1 extends AppCompatActivity {
                             }
                         })
                         .build();
-
-
 
 
             }
@@ -94,7 +89,7 @@ public class Main2Activity1 extends AppCompatActivity {
                             @Override
                             public void OnClick() {
                                 finish();
-                                Intent intent1 = new Intent(Main2Activity1.this,MainActivity.class);
+                                Intent intent1 = new Intent(Main2Activity1.this, MainActivity.class);
                                 startActivity(intent1);
 
                             }
@@ -112,76 +107,28 @@ public class Main2Activity1 extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
-
-//        new FancyGifDialog.Builder(this)
-//                .setTitle("Correct")
-//                .setMessage("All people should see a number 12, including those with total color blindness")
-//                .setPositiveBtnBackground("#FF4081")
-//                .setPositiveBtnText("Ok")
-//                .setNegativeBtnBackground("#FFA9A7A8")
-//                .setGifResource(R.drawable.youright)   //Pass your Gif here
-//                .OnPositiveClicked(new FancyGifDialogListener() {
-//                    @Override
-//                    public void OnClick() {
-//                        finish();
-//                        startActivity(intent);
-//                    }
-//                })
-//                .build();
-
-
-
-
-
-
-
-
-
-//        AlertDialog.Builder b = new AlertDialog.Builder(this);
-//        b.setTitle("What did you see ?");
-//        b.setMessage("“12”\tAll people should see a number 12, including those with total color blindness – If someone said they can’t see something, or saw something else – they are fibbing:)");
-//        b.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-//            @Override
-//            public void onClick(DialogInterface dialogInterface, int i) {
-//                finish();
-//                startActivity(intent);
-//            }
-//        });
-//       final AlertDialog al= b.create();
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 diem1++;
                 mp.start();
-                bundle.putInt("diem",diem1);
-                intent.putExtra("dulieu",bundle);
+                bundle.putInt("diem", diem1);
+                intent.putExtra("dulieu", bundle);
                 kiemtradung();
                 mp1.start();
-
-
 
 
             }
         });
 
 
-
-
-
-
-
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                bundle.putInt("diem",diem1);
-                intent.putExtra("dulieu",bundle);
+                bundle.putInt("diem", diem1);
+                intent.putExtra("dulieu", bundle);
                 mp.start();
-              //  al.show();
+                //  al.show();
                 kiemtrasai();
                 mp2.start();
 
@@ -191,40 +138,32 @@ public class Main2Activity1 extends AppCompatActivity {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                bundle.putInt("diem",diem1);
-                intent.putExtra("dulieu",bundle);
+                bundle.putInt("diem", diem1);
+                intent.putExtra("dulieu", bundle);
                 mp.start();
                 kiemtrasai();
-            //    al.show();
+                //    al.show();
                 mp2.start();
 
             }
         });
-		   b4.setOnClickListener(new View.OnClickListener() {
+        b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                bundle.putInt("diem",diem1);
-                intent.putExtra("dulieu",bundle);
+                bundle.putInt("diem", diem1);
+                intent.putExtra("dulieu", bundle);
                 mp.start();
                 kiemtrasai();
-            //    al.show();
+                //    al.show();
                 mp2.start();
 
             }
         });
-		
-		
-
-
-
-
-
-
 
 
     }
-    public void kiemtradung()
-    {
+
+    public void kiemtradung() {
         new FancyGifDialog.Builder(this)
                 .setTitle("Correct")
                 .setMessage("All people should see a number 12, including those with total color blindness")
@@ -254,8 +193,8 @@ public class Main2Activity1 extends AppCompatActivity {
 
 
     }
-    public void kiemtrasai()
-    {
+
+    public void kiemtrasai() {
         new FancyGifDialog.Builder(this)
                 .setTitle("Wrong!!!")
                 .setMessage("All people should see a number 12, including those with total color blindness")
